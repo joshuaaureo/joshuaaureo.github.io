@@ -8,6 +8,13 @@ body {
     height: 100vh;
     margin: 0;    
 }
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .nav {
     position:fixed;
     margin-top: -180px;
