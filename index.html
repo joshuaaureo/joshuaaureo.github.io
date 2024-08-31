@@ -7,37 +7,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-        <div class="nav">
+    <div class="nav">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="#about-modal">About Me</a>
             <a href="project.html">Projects</a>
         </div>
-        <div class="intro-container">
-            <div class="intro">
-                <p>HI, <br>IM<span style="color: rgb(255, 105, 105);"> JOSHUA</span> A<br>GRAPHIC DESIGNER</p>
-            </div>
-            <img src="https://res.cloudinary.com/dz1tjlcwu/image/upload/v1724228598/nkaypvsssjmxbhonldnp.png" alt="Joshua's Photo">
+    </div>
+    <div class="intro-container">
+        <div class="intro">
+            <p>HI, I'M <span style="color: rgb(255, 105, 105);">JOSHUA</span><br>A GRAPHIC DESIGNER</p>
         </div>
-        <div class="buttons">
-            <a href="#">PROJECTS</a>
-            <a href="#email-modal">CONTACTS</a>
+        <img src="https://res.cloudinary.com/dz1tjlcwu/image/upload/v1724228598/nkaypvsssjmxbhonldnp.png" alt="Joshua's Photo">
+    </div>
+    <div class="buttons">
+        <a href="project.html">PROJECTS</a>
+        <a href="#email-modal">CONTACTS</a>
+    </div>
+    <div id="email-modal">
+        <div class="modal-content">
+            <h2>CONTACTS</h2>
+            <a href="#" class="close-button">X</a>
+            <p>EMAIL:</p>
+            <p><strong>joshuaureopo@gmail.com</strong></p>
         </div>
-        <div id="email-modal">
-            <div class="modal-content">
-                <h2>CONTACTS</h2>
-                <a href="#" class="close-button">X</a>
-                <p>EMAIL:</p>
-                <p><strong>joshuaureopo@gmail.com</strong></p>
-            </div>
+    </div>
+    <div id="about-modal">
+        <div class="modal-content">
+            <a href="#" class="close-button">X</a>
+            <p>I’m Joshua Aureo, a Computer Science Student and Graphic Designer. <br>Learned: Python, JavaScript, PHP, and MySQL. <br>Tools: Figma, Gimp, and Canva.</p>
         </div>
-        <div id="about-modal">
-            <div class="modal-content">
-                <a href="#" class="close-button">X</a>
-                <p style="text-align: center;">I’m Joshua Aureo a Computer Science Student, Graphic Designer. I love what makes me happy</p>
-            </div>
-        </div>
-    </main>
+    </div>
 
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
