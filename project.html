@@ -8,14 +8,21 @@
 </head>
 <body>
     <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="#about-modal">About Me</a>
-        <a href="project.html">Projects</a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#about-modal">About Me</a>
+            <a href="project.html">Projects</a>
+        </div>
     </div>
     <div class="intro-container">
     </div>
     <div class="projects">
-        <p>My Projects</p>
+        <h1>My Projects</h1>
         <div class="project-gallery">
             <div class="project-item">
                 <p>Ecommerce</p>
@@ -24,12 +31,12 @@
             </div>
             <div class="project-item">
                 <p>Payroll</p>
-                <img src="" alt="Payroll">
+                <img src="https://res.cloudinary.com/dz1tjlcwu/image/upload/v1725075982/mvi1nvwcisuxjjexcqxt.jpg" alt="Payroll">
                 
             </div>
             <div class="project-item">
                 <p>Inventory System</p>
-                <img src="" alt="Inventory System">
+                <img src="https://res.cloudinary.com/dz1tjlcwu/image/upload/v1725076096/ie6dyoocpgx2xyj4ouk6.png" alt="Inventory System">
                 
             </div>
         </div>
@@ -42,5 +49,12 @@
             <p style="text-align: center;">I’m Joshua Aureo, a Computer Science Student, and Graphic Designer. I love what makes me happy</p>
         </div>
     </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
